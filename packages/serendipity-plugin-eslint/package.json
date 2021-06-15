@@ -1,6 +1,6 @@
 {
   "name": "@attachments/serendipity-plugin-eslint",
-  "version": "0.1.17",
+  "version": "0.1.18",
   "main": "lib/index.js",
   "scripts": {
     "start": "tsc -w",

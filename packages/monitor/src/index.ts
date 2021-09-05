@@ -12,3 +12,4 @@ export { createJsErrorMonitor } from './js-error/js-error-monitor';
 export { createAssetsMonitor } from './assets/assets-monitor';
 export { createAssetsErrorMonitor } from './assets-error/assets-error-monitor';
 export { createPaintMonitor } from './paint/paint-monitor';
+export { createFirstMeaningfulPaintMonitor } from './fmp/fmp-monitor';

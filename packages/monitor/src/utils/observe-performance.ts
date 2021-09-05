@@ -1,5 +1,5 @@
-import { noop } from './noop';
 import { getPerformanceObserver } from './browser-interfaces';
+import { noop } from 'lodash';
 
 /**
  * 监听 performance 性能指标

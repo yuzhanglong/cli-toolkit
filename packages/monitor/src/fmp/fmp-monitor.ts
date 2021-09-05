@@ -7,7 +7,21 @@
  */
 
 import { FmpMonitorOptions } from './types';
+import { observeMutation } from '../utils/observe-mutation';
 
 export const createFirstMeaningfulPaintMonitor = (options: FmpMonitorOptions) => {
 
+  const opts: MutationObserverInit = {
+    subtree: true,
+    childList: true,
+  };
+
+  const { destroy } = observeMutation(document, opts, (mutations) => {
+    console.log(mutations);
+  });
+
+
+  return {
+    destroy: destroy,
+  };
 };

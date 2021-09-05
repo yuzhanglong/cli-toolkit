@@ -10,7 +10,7 @@ export type CommonKeys<O extends {}> = {
 
 
 // 回调
-export type CallBack<P> = (params: P) => void
+export type CallBack<P = any> = (params: P) => void
 
 export type BaseObject<T = any> = Record<string, T>
 
